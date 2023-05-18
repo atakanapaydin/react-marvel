@@ -1,0 +1,41 @@
+.not-found-page {
+  padding: 40px 0;
+  background: #fff;
+  .container {
+    display: block;
+    max-width: 650px;
+    .not-found-bg {
+      background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+      height: 430px;
+      background-position: center;
+      text-align: center;
+      position: relative;
+      h1 {
+        font-size: 80px;
+        position: absolute;
+        top: -60px;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    }
+    .not-found-page-content {
+      text-align: center;
+      margin-top: 10px;
+      p {
+        font-size: 20px;
+        text-align: center;
+        color: #000;
+      }
+      a.link {
+        color: #fff !important;
+        padding: 10px 20px;
+        background: #39ac31;
+        margin: 20px 0;
+        display: inline-block;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+    }
+  }
+}

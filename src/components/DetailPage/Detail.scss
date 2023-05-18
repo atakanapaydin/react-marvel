@@ -1,0 +1,112 @@
+.hero-card {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  height: 100vh;
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    width: 100%;
+    .go-back {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      margin: 20px 0;
+      display: inline-block;
+    }
+    .hero-container {
+      display: flex;
+      gap: 20px;
+
+      .hero-image {
+        width: 50%;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .hero-details {
+        width: 50%;
+        h1 {
+          color: #fff;
+          font-size: 40px;
+          font-weight: 700;
+        }
+        h2 {
+          color: #fff;
+        }
+        p {
+          color: #fff;
+          font-size: 16px;
+          margin-bottom: 20px;
+        }
+        a {
+          color: #e62429;
+          font-size: 16px;
+          font-weight: 400;
+          margin-bottom: 20px;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    height: 100%;
+    .container {
+      padding: 20px 0;
+      .go-back {
+        margin-top: 10px;
+      }
+      .hero-container {
+        .hero-image {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        .hero-details {
+          width: 100%;
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .hero-container {
+      flex-direction: column;
+      .hero-details {
+        h1 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  .hero-item-bg {
+    max-width: 100%;
+    margin: 0 auto;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    height: 1000vh;
+
+    img {
+      width: 100% !important;
+      margin-right: -5%;
+      margin-top: -30px;
+      filter: blur(1rem);
+      background-color: transparent !important;
+      -webkit-mask-box-image: none !important;
+      opacity: 0.18;
+      height: 100vh;
+    }
+  }
+}
+.header {
+  margin-bottom: 0;
+}
